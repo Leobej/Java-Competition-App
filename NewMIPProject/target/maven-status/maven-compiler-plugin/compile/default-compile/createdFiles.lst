@@ -1,0 +1,11 @@
+database\dao\StageDao.class
+database\dao\StageTeamDao.class
+database\model\PersonEntity.class
+database\model\StageteamEntity.class
+database\model\StageEntity.class
+database\dao\PersonDao.class
+database\model\TeamEntity.class
+database\dao\TeamDao.class
+database\connection\DatabaseConnection.class
+Server.class
+Server$ClientHandler.class

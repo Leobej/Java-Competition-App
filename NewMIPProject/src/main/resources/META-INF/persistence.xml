@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <mapping-file>META-INF/orm.xml</mapping-file>
+        <class>database.model.PersonEntity</class>
+        <class>database.model.StageEntity</class>
+        <class>database.model.StageteamEntity</class>
+        <class>database.model.TeamEntity</class>
+
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/MIP"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="root"/>
+            <property name="hibernate.show_sql" value="true"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>

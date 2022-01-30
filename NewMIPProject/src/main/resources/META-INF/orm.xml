@@ -1,0 +1,74 @@
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" version="2.2">
+    <persistence-unit-metadata>
+        <persistence-unit-defaults>
+            <access>FIELD</access>
+        </persistence-unit-defaults>
+    </persistence-unit-metadata>
+    <entity class="database.model.PersonEntity">
+        <table name="person" schema="public" catalog="MIP"/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="username">
+                <column name="username"/>
+            </basic>
+            <basic name="admin">
+                <column name="admin"/>
+            </basic>
+            <basic name="firstname">
+                <column name="firstname"/>
+            </basic>
+            <basic name="lastname">
+                <column name="lastname"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="database.model.StageEntity">
+        <table name="stage" schema="public" catalog="MIP"/>
+        <attributes>
+            <id name="idStage">
+                <column name="id_stage"/>
+            </id>
+            <basic name="score">
+                <column name="score"/>
+            </basic>
+            <basic name="stageNumber">
+                <column name="stage_number"/>
+            </basic>
+            <basic name="idUser">
+                <column name="id_user"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="database.model.StageteamEntity">
+        <table name="stageteam" schema="public" catalog="MIP"/>
+        <attributes>
+            <id name="idStageTeam">
+                <column name="id_stage_team"/>
+            </id>
+            <basic name="idTeam">
+                <column name="id_team"/>
+            </basic>
+            <basic name="idStage">
+                <column name="id_stage"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="database.model.TeamEntity">
+        <table name="team" schema="public" catalog="MIP"/>
+        <attributes>
+            <id name="idTeam">
+                <column name="id_team"/>
+            </id>
+            <basic name="idUser">
+                <column name="id_user"/>
+            </basic>
+            <basic name="teamName">
+                <column name="team_name"/>
+            </basic>
+        </attributes>
+    </entity>
+
+
+</entity-mappings>
